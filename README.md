@@ -41,10 +41,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | `pnpm dev`           | Start development server                 |
 | `pnpm build`         | Build for production                     |
 | `pnpm start`         | Start production server                  |
-| `pnpm lint`          | Run ESLint                               |
-| `pnpm lint:fix`      | Run ESLint with auto-fix                 |
-| `pnpm format`        | Format code with Prettier                |
-| `pnpm format:check`  | Check code formatting                    |
+| `pnpm lint`          | Run ESLint (includes Prettier checks)    |
+| `pnpm lint:fix`      | Run ESLint with auto-fix and formatting  |
 | `pnpm test`          | Run tests in watch mode                  |
 | `pnpm test:run`      | Run tests once                           |
 | `pnpm test:coverage` | Run tests with coverage report           |
