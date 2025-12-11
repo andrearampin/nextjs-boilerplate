@@ -9,6 +9,8 @@ A modern Next.js boilerplate with TypeScript, Tailwind CSS, Prettier, and Vitest
 - **Styling**: Tailwind CSS 4
 - **Linting**: ESLint with Prettier integration
 - **Testing**: Vitest with React Testing Library
+- **Data Fetching**: TanStack React Query
+- **Validation**: Zod
 - **Package Manager**: pnpm
 
 ## Getting Started
@@ -51,12 +53,27 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ```
 src/
-├── app/              # Next.js App Router pages and layouts
-├── test/             # Test setup and utilities
+├── app/                  # Next.js App Router
+│   ├── api/              # API routes
+│   │   └── welcome/      # Example API endpoint
+│   ├── globals.css       # Global styles
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Home page
+├── components/
+│   ├── providers/        # React context providers
+│   │   └── query-provider.tsx  # TanStack Query provider
+│   └── ui/               # Reusable UI components
+│       ├── button.tsx    # Button component
+│       └── spinner.tsx   # Loading spinner
+└── test/                 # Test setup and utilities
+    ├── setup.ts          # Vitest setup
+    └── utils.ts          # Test utilities
 ```
 
 ## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TanStack Query Documentation](https://tanstack.com/query/latest)
+- [Zod Documentation](https://zod.dev)
 - [Vitest Documentation](https://vitest.dev)
