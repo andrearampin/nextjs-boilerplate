@@ -9,7 +9,7 @@ describe('POST /api/welcome', () => {
     const data = await response.json();
 
     expect(response.status).toBe(200);
-    expect(data).toEqual({ message: 'Welcome, John!' });
+    expect(data).toEqual({ message: 'Welcome John!' });
   });
 
   it('returns 400 for missing name', async () => {

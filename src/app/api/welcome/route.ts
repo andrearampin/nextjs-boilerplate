@@ -26,7 +26,7 @@ export async function POST(
 
     const { name } = result.data;
 
-    return NextResponse.json({ message: `Welcome, ${name}!` });
+    return NextResponse.json({ message: `Welcome ${name}!` });
   } catch {
     return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
   }
